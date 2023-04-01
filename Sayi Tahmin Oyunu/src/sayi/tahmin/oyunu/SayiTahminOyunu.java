@@ -1,5 +1,3 @@
-package sayi.tahmin.oyunu;
-
 import java.util.Random;
 import java.util.Scanner;
 import java.lang.Math;
