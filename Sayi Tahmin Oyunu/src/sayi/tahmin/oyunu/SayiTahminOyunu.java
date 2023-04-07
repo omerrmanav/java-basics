@@ -1,3 +1,5 @@
+package sayi.tahmin.oyunu;
+
 import java.util.Random;
 import java.util.Scanner;
 import java.lang.Math;
@@ -26,7 +28,7 @@ public class SayiTahminOyunu {
                 System.out.println("Olmasi gereken degerlerin disina ciktiniz !\n");
                 hataliGiris++;
                 if (hataliGiris == 1) {
-                    System.out.println("0-50 arasi sayi girmen gerekiyor !");
+                    System.out.println("Mal 0-50 arasi girceksin");
                     System.out.println("Oyun kapatiliyor...");
                     break;
                 }
@@ -48,7 +50,7 @@ public class SayiTahminOyunu {
                 if (yakinlik > 5) {
                     System.out.println("Cok uzaksin :d ne beklion dene bida");
                 } else {
-                    System.out.println("Yaklasiyosun dostum devaaaamm....(Yakınlık mutlak değerce 5)");
+                    System.out.println("Yaklasiyosun dostum devaaaamm....");
                 }
             }
             System.out.println();
