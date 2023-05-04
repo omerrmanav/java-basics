@@ -1,0 +1,29 @@
+public class App {
+
+    public static void main(String[] args) throws Exception {
+        int num = 50;
+        while(num < 100) {
+            if (isPrime(num)) {
+                System.out.println(num);
+            }
+            num++;
+        }
+
+    }
+
+    static boolean isPrime(int x) {
+        int i = 2;
+        if (x < 2) {
+            return false;
+        }
+
+        while (i < x) {
+            if(x % i == 0) {
+                return false;
+            }
+            i++;
+        }
+        return true;
+    }
+
+}
