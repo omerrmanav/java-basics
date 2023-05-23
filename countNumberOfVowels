@@ -1,0 +1,40 @@
+package problemsolving;
+
+import java.util.*;
+
+public class ProblemSolving {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String sentence = "Hope is the light that guides us through the darkest times..";
+        String sentence2 = "Artificial intelligence continues to reshape our world with limitless potential.";
+        
+        
+        countNumberOfVowels(sentence);
+        countNumberOfVowels(sentence2);
+        
+    }
+    
+    public static void countNumberOfVowels (String sentence) {
+        System.out.println(sentence);
+        
+        int numberVowels = 0;
+        char[] vowels = {'a', 'e', 'i', 'o', 'u'};
+        String[] words = sentence.split(" ");
+
+        for (int i = 0; i < words.length; i++) {
+            for (int j = 0; j < words[i].length(); j++) {
+                char matchingLetter = words[i].charAt(j);
+                for (int k = 0; k < vowels.length; k++) {
+                    if (Character.toLowerCase(matchingLetter) == Character.toLowerCase(vowels[k])) {
+                        numberVowels++;
+                        break;
+                    }
+                }
+            }
+            System.out.println(" ' " + words[i] + " ' " + "There are " + numberVowels + " vowels");
+            numberVowels = 0;
+        }
+        System.out.println();
+    }
+}
